@@ -14,10 +14,6 @@ export class HeroesComponent implements OnInit {
   constructor() { }
 
   heroes = HEROES;
-  hero: Hero = {
-    id: 1,
-    name: 'Windstorm',
-  };
 
   selectedHero: Hero;
 
@@ -26,7 +22,6 @@ export class HeroesComponent implements OnInit {
 
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
-    window.alert(hero.name);
   }
 
 }
